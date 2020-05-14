@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.ath[status="FALSE"] {
+  cursor: not-allowed;
+  pointer-events: none;
+  /* rest of your disable code */
+}
