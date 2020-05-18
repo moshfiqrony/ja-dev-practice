@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
-
+import ErrorBoundary from "./ErrorBoundary";
 import App from "./App";
+// import App from "./ErrorTestApp";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ErrorBoundary>
+      <App />
+    </ErrorBoundary>
   </React.StrictMode>,
   rootElement
 );

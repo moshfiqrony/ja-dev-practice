@@ -16,23 +16,24 @@ const data = [
     title: "Title 4"
   }
 ];
-export default function() {
-  // const [showButton, setShowButton] = useState(false);
 
-  // const usePriest = evt => {
-  //   setShowButton(true);
-  // };
+export default function(props) {
+  const data2 = {
+    name: JSON?.parse("{}")
+  };
 
   return (
-    <List
-      grid={{ gutter: 16, column: 4 }}
-      dataSource={data}
-      renderItem={item => (
-        <List.Item>
-          <Card title={item.title}>Card content</Card>
-        </List.Item>
-      )}
-    />
+    <Fragment>
+      <List
+        grid={{ gutter: 16, column: 4 }}
+        dataSource={data}
+        renderItem={item => (
+          <List.Item>
+            <Card title={item.title}>Card content</Card>
+          </List.Item>
+        )}
+      />
+    </Fragment>
   );
 
   // return (
